@@ -4,13 +4,58 @@
 <head>
     <title>Friend list</title>
     <style>
-        table, td{
-            border: 1px solid black;
+        ul{
+            list-style-type:square;
         }
-        th{
-            border: 3px solid black;
+        h1 {
+            font-family: cursive;
+            text-align: center;
+        }
+
+        table {
+            border-right: groove;
+            border-collapse: collapse;
+            border-spacing: 20px;
+            width: 100%;
+        }
+
+        table tr:nth-child(even) {
+            background-color: cornflowerblue;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: rgb(137, 173, 238);
+        }
+
+        td {
+            border-left: groove;
+            border-right: groove;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th {
+            border-top: groove;
+            border-left: groove;
+            border-right: groove;
             background-color: rgb(132, 209, 240);
             color: rgb(0, 26, 255);
+            border-collapse: collapse;
+            padding: 10px 5px 10px 5px;
+        }
+
+        .hobbies {
+            text-align: left;
+        }
+
+        .last {
+            border-bottom: groove;
+        }
+
+        caption {
+            caption-side: bottom;
+            text-align: right;
+            font-family: cursive;
         }
     </style>
 </head>
@@ -18,106 +63,117 @@
 <body>
     <h1>Contacts of my friends:</h1>
     <table>
-        <tr>
-            <th>S.N</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Phone No.</th>
-            <th>Facebook Profile</th>
-            <th>Intrest/Hobbies</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Swornim</td>
-            <td>Shrestha</td>
-            <td><a href="tel:+9779861611053">Call him</a></td>
-            <td><a href="https://www.facebook.com/swornim.shrestha.3">His Profile</a></td>
-            <td>
-                <ul>
-                    <li>Programming</li>
-                    <li>Cubing</li>
-                    <li>Playing Chess</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Ramesh</td>
-            <td>Gurung</td>
-            <td><a href="tel:+9779808814910">Call him</a></td>
-            <td><a href="https://www.facebook.com/ramesh.gurung.12382923">His Profile</a></td>
-            <td>
-                <ul>
-                    <li>Playing Games</li>
-                    <li>Art and crafting</li>
-                    <li>Playing Instruments</li>
+        <caption>By: Manish Guruwacharya</caption>
+        <thead>
+            <tr>
+                <th>S.N</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone No.</th>
+                <th>Facebook Profile</th>
+                <th>Intrest/Hobbies</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td rowspan="1">Swornim</td>
+                <td>Shrestha</td>
+                <td><a href="tel:+9779861611053"><img src="https://www.pinclipart.com/picdir/middle/145-1452895_phone-android-apps-phone-icon-png-blue-clipart.png" alt="Click to call" width="60" height="60"></a></td>
+                <td><a href="https://www.facebook.com/swornim.shrestha.3"><img src="https://icons-for-free.com/iconfiles/png/512/fb+icon-1320183899414660008.png" alt="Click Here" width="60" height="60"></a></td>
+                <td class="hobbies">
+                    <ul>
+                        <li>Programming</li>
+                        <li>Cubing</li>
+                        <li>Playing Chess</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ramesh</td>
+                <td>Gurung</td>
+                <td><a href="tel:+9779808814910"><img src="https://www.pinclipart.com/picdir/middle/145-1452895_phone-android-apps-phone-icon-png-blue-clipart.png" alt="Click to call" width="60" height="60"></a></td>
+                <td><a href="https://www.facebook.com/ramesh.gurung.12382923"><img src="https://icons-for-free.com/iconfiles/png/512/fb+icon-1320183899414660008.png" alt="Click Here" width="60" height="60"></a></td>
+                <td class="hobbies">
+                    <ul>
+                        <li>Playing Games</li>
+                        <li>Art and crafting</li>
+                        <li>Playing Instruments</li>
 
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Diwash</td>
-            <td>Joshi</td>
-            <td><a href="tel:+9779861969186">Call him</a></td>
-            <td><a href="https://www.facebook.com/diwash.joshiDJ.15">His Profile</a></td>
-            <td>
-                <ul>
-                    <li>Video edits</li>
-                    <li>Web surfing</li>
-                    <li>Playing Pubg</li>
-                    <li>Listening Music</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Diwash</td>
+                <td>Joshi</td>
+                <td><a href="tel:+9779861969186"><img src="https://www.pinclipart.com/picdir/middle/145-1452895_phone-android-apps-phone-icon-png-blue-clipart.png" alt="Click to call" width="60" height="60"></a></td>
+                <td><a href="https://www.facebook.com/diwash.joshiDJ.15"><img src="https://icons-for-free.com/iconfiles/png/512/fb+icon-1320183899414660008.png" alt="Click Here" width="60" height="60"></a></td>
+                <td class="hobbies">
+                    <ul>
+                        <li>Video edits</li>
+                        <li>Web surfing</li>
+                        <li>Playing Pubg</li>
+                        <li>Listening Music</li>
 
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Subodh</td>
-            <td>Shrestha</td>
-            <td><a href="tel:+9779868836822">Call him</a></td>
-            <td><a href="https://www.facebook.com/diwash.joshiDJ.15">His Profile</a></td>
-            <td>
-                <ul>
-                    <li>Video edits</li>
-                    <li>Programming</li>
-                    <li>Digital Art</li>
-                    <li>Playing Pubg</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Aashutosh</td>
-            <td>Khadka</td>
-            <td><a href="tel:+9779864390806">Call him</a></td>
-            <td><a href="https://www.facebook.com/aashutosh.khadka.90">His Profile</a></td>
-            <td>
-                <ul>
-                    <li>Animation</li>
-                    <li>VFX</li>
-                    <li>3D modeling</li>
-                    <li>Listening Music</li>
-                    <li>Playing guitar and Bass</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Giver</td>
-            <td>Khadka</td>
-            <td><a href="tel:+9779805246726">Call him</a></td>
-            <td><a href="https://www.facebook.com/dhiraj.kdk.37">His Profile</a></td>
-            <td>
-                <ul>
-                    <li>Animation</li>
-                    <li>Video edits</li>
-                    <li>3D modeling</li>
-                    <li>Listening Music</li>
-                    <li>Sketch Art</li>
-                </ul>
-            </td>
-        </tr>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Subodh</td>
+                <td>Shrestha</td>
+                <td><a href="tel:+9779868836822"><img src="https://www.pinclipart.com/picdir/middle/145-1452895_phone-android-apps-phone-icon-png-blue-clipart.png" alt="Click to call" width="60" height="60"></a></td>
+                <td><a href="https://www.facebook.com/diwash.joshiDJ.15"><img src="https://icons-for-free.com/iconfiles/png/512/fb+icon-1320183899414660008.png" alt="Click Here" width="60" height="60"></a></td>
+                <td class="hobbies">
+                    <ul>
+                        <li>Video edits</li>
+                        <li>Programming</li>
+                        <li>Digital Art</li>
+                        <li>Playing Pubg</li>
+
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Aashutosh</td>
+                <td>Khadka</td>
+                <td><a href="tel:+9779864390806"><img src="https://www.pinclipart.com/picdir/middle/145-1452895_phone-android-apps-phone-icon-png-blue-clipart.png" alt="Click to call" width="60" height="60"></a></td>
+                <td><a href="https://www.facebook.com/aashutosh.khadka.90"><img src="https://icons-for-free.com/iconfiles/png/512/fb+icon-1320183899414660008.png" alt="Click Here" width="60" height="60"></a></td>
+                <td class="hobbies">
+                    <ul>
+                        <li>Animation</li>
+                        <li>VFX</li>
+                        <li>3D modeling</li>
+                        <li>Listening Music</li>
+                        <li>Playing guitar and Bass</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="last">
+                <td>6</td>
+                <td>Giver</td>
+                <td>Khadka</td>
+                <td><a href="tel:+9779811259286"><img src="https://www.pinclipart.com/picdir/middle/145-1452895_phone-android-apps-phone-icon-png-blue-clipart.png" alt="Click to call" width="60" height="60"></a></td>
+                <td><a href="https://www.facebook.com/dhiraj.kdk.37"><img src="https://icons-for-free.com/iconfiles/png/512/fb+icon-1320183899414660008.png" alt="Click Here" width="60" height="60"></a></td>
+                <td class="hobbies">
+                    <ul>
+                        <li>Animation</li>
+                        <li>Video edits</li>
+                        <li>3D modeling</li>
+                        <li>Listening Music</li>
+                        <li>Sketch Art</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+
+            </tr>
+        </tfoot>
     </table>
 </body>
 
