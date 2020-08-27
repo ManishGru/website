@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #first {
+            float: left;
+            padding-right: 20px;
+            width: 450px;
+            height: 450px;
+        }
+
+        #second {
+            float: right;
+            padding-right: 20px;
+            width: 450px;
+            height: 450px;
+        }
+
+        .first {
+            background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg');
+            background-repeat: no-repeat;
+            color: white;
+            background-size: cover;
+            background-attachment:scroll;
+        }
+
+        .second {
+            background-image: url('https://images.unsplash.com/photo-1447710441604-5bdc41bc6517?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+            color: white;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment:inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <picture>
+            <source media="(min-width-430px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRG4cr0NR5VDe_i2BDUj6rhfr5zubnifV17QQ&usqp=CAU">
+            <img id="first" src="https://www.w3schools.com/html/workplace.jpg" alt="This is a picture of a tech."
+                usemap="#first">
+        </picture>
+        <map name="first">
+            <area shape="rect" coords="37,50,310,420" href="https://www.w3schools.com/html/computer.htm"
+                alt="Click here to go to laptop page">
+            <area shape="circle" coords="380,355,53" href="https://www.w3schools.com/html/coffee.htm"
+                alt="Click here to go to coffee">
+            <area shape="rect" coords="325,205,377,298" href="https://www.w3schools.com/html/phone.htm"
+                alt="Click here to go to mobile">
+        </map>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas suscipit imperdiet. Duis nibh enim,
+            feugiat egestas turpis nec, mollis ultrices quam. Suspendisse tincidunt neque condimentum ultricies
+            fermentum. Pellentesque egestas mattis tempor. Curabitur aliquet congue dignissim. Aenean mollis elit eu
+            turpis aliquet faucibus. Nunc non massa nibh. Proin ultrices risus urna. Nullam varius nisi in ultricies
+            cursus. <br><br>
+
+            Integer porta neque rhoncus nibh placerat pulvinar. Duis porta volutpat aliquam. Vestibulum eu auctor arcu,
+            consectetur feugiat nisl. Morbi vel nulla at nibh condimentum condimentum. Nunc dolor neque, pulvinar sit
+            amet dolor quis, ullamcorper varius odio. Praesent porta ornare rutrum. Aenean sem odio, porttitor eu felis
+            non, rhoncus blandit ligula. <br><br>
+
+            Sed dapibus rhoncus eros, ac tincidunt tortor mollis ac. Sed volutpat interdum nibh, nec scelerisque enim
+            posuere quis. Praesent congue faucibus velit elementum varius. Duis cursus velit a scelerisque lobortis.
+            Proin suscipit ex ut tristique placerat. Sed quis facilisis ligula, eu facilisis lectus. Nulla tempus felis
+            ac augue consectetur, ornare cursus mi dapibus. Nunc congue lorem eu sapien sagittis, at molestie massa
+            cursus. Donec at congue quam. Etiam gravida mi sit amet suscipit dapibus. Cras et hendrerit odio, ac
+            malesuada felis. Integer pulvinar suscipit convallis. Duis venenatis ut turpis at pharetra. Sed sed placerat
+            lectus. <br><br>
+
+            Nam ultrices leo non nibh mattis vehicula. Duis non sagittis magna. Orci varius natoque penatibus et magnis
+            dis parturient montes, nascetur ridiculus mus. Etiam ut libero suscipit, gravida lacus at, cursus velit.
+            Duis turpis eros, tristique ac nisl pellentesque, mattis euismod orci. Nam gravida feugiat sem, sed aliquam
+            mi ullamcorper id. Duis ligula arcu, mollis sed egestas sed, viverra et lorem. Nam efficitur leo at ex
+            porttitor tristique. Aenean nisi enim, ultricies vel commodo quis, dignissim sit amet turpis. Donec sem sem,
+            pellentesque eu aliquet vel, egestas at orci. Sed eu eros ac nisl fermentum hendrerit in a justo. Morbi
+            tortor diam, laoreet sed viverra ut, sagittis quis ipsum. <br><br>
+
+            Nullam faucibus, tellus a facilisis egestas, magna diam sollicitudin sem, ut feugiat arcu erat id felis.
+            Morbi quis interdum mi. Nullam eget pellentesque risus, sit amet sodales est. Vestibulum ac turpis non
+            tellus venenatis egestas et in velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie
+            lacus at risus vehicula volutpat. Phasellus dolor risus, tincidunt id nunc vel, accumsan egestas eros. Duis
+            maximus ante vitae sem condimentum interdum. Sed efficitur diam lobortis, pellentesque tellus in, gravida
+            elit. Pellentesque orci elit, scelerisque non nibh ac, lacinia luctus eros. Phasellus bibendum metus
+            convallis lorem fringilla sollicitudin. Vestibulum nec enim leo. <br><br>
+        </p>
+    </div>
+    <hr>
+    <div>
+        <img id="second" src="https://www.w3schools.com/html/frenchfood.jpg" alt="This is a picture of a bakery"
+            usemap="#second">
+        <map name="second">
+            <area shape="poly" coords="45,230,35,200,60,140,125,95,180,80,210,105,200,175,175,200,145,220,95,240"
+                href="https://www.w3schools.com/html/croissant.htm" alt="clicl her to go to croissant page">
+        </map>
+        <p class="second">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas suscipit imperdiet. Duis nibh enim,
+            feugiat egestas turpis nec, mollis ultrices quam. Suspendisse tincidunt neque condimentum ultricies
+            fermentum. Pellentesque egestas mattis tempor. Curabitur aliquet congue dignissim. Aenean mollis elit eu
+            turpis aliquet faucibus. Nunc non massa nibh. Proin ultrices risus urna. Nullam varius nisi in ultricies
+            cursus. <br><br>
+
+            Integer porta neque rhoncus nibh placerat pulvinar. Duis porta volutpat aliquam. Vestibulum eu auctor arcu,
+            consectetur feugiat nisl. Morbi vel nulla at nibh condimentum condimentum. Nunc dolor neque, pulvinar sit
+            amet dolor quis, ullamcorper varius odio. Praesent porta ornare rutrum. Aenean sem odio, porttitor eu felis
+            non, rhoncus blandit ligula. <br><br>
+
+            Sed dapibus rhoncus eros, ac tincidunt tortor mollis ac. Sed volutpat interdum nibh, nec scelerisque enim
+            posuere quis. Praesent congue faucibus velit elementum varius. Duis cursus velit a scelerisque lobortis.
+            Proin suscipit ex ut tristique placerat. Sed quis facilisis ligula, eu facilisis lectus. Nulla tempus felis
+            ac augue consectetur, ornare cursus mi dapibus. Nunc congue lorem eu sapien sagittis, at molestie massa
+            cursus. Donec at congue quam. Etiam gravida mi sit amet suscipit dapibus. Cras et hendrerit odio, ac
+            malesuada felis. Integer pulvinar suscipit convallis. Duis venenatis ut turpis at pharetra. Sed sed placerat
+            lectus. <br><br>
+
+            Nam ultrices leo non nibh mattis vehicula. Duis non sagittis magna. Orci varius natoque penatibus et magnis
+            dis parturient montes, nascetur ridiculus mus. Etiam ut libero suscipit, gravida lacus at, cursus velit.
+            Duis turpis eros, tristique ac nisl pellentesque, mattis euismod orci. Nam gravida feugiat sem, sed aliquam
+            mi ullamcorper id. Duis ligula arcu, mollis sed egestas sed, viverra et lorem. Nam efficitur leo at ex
+            porttitor tristique. Aenean nisi enim, ultricies vel commodo quis, dignissim sit amet turpis. Donec sem sem,
+            pellentesque eu aliquet vel, egestas at orci. Sed eu eros ac nisl fermentum hendrerit in a justo. Morbi
+            tortor diam, laoreet sed viverra ut, sagittis quis ipsum. <br><br>
+
+            Nullam faucibus, tellus a facilisis egestas, magna diam sollicitudin sem, ut feugiat arcu erat id felis.
+            Morbi quis interdum mi. Nullam eget pellentesque risus, sit amet sodales est. Vestibulum ac turpis non
+            tellus venenatis egestas et in velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie
+            lacus at risus vehicula volutpat. Phasellus dolor risus, tincidunt id nunc vel, accumsan egestas eros. Duis
+            maximus ante vitae sem condimentum interdum. Sed efficitur diam lobortis, pellentesque tellus in, gravida
+            elit. Pellentesque orci elit, scelerisque non nibh ac, lacinia luctus eros. Phasellus bibendum metus
+            convallis lorem fringilla sollicitudin. Vestibulum nec enim leo.<br><br>
+        </p>
+    </div>
+    <hr>
+</body>
+
+</html>
